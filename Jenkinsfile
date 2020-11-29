@@ -21,7 +21,7 @@ pipeline {
 
         stage("Using env vars"){
             steps {
-                echo "BUILD_NUMBER = ${env.BUILD.NUMBER}"
+                echo "BUILD_NUMBER = ${env.BUILD_NUMBER}"
             }
         }
         // stage('Tests') {
