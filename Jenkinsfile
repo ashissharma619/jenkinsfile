@@ -18,6 +18,12 @@ pipeline {
                 sh 'mvn --version'
             }
         }
+
+        stage("Using env vars"){
+            steps {
+                echo "BUILD_NUMBER = ${env.BUILD.NUMBER}"
+            }
+        }
         // stage('Tests') {
         //     parallel {
         //         stage('Pa11y Tests'){
