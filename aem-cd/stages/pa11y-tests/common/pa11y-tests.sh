@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 if [ ! -s "./ci/pa11y-config.json" ]; then 
    echo "The file ./ci/pa11y-config.json either doesn't exist or is empty."
