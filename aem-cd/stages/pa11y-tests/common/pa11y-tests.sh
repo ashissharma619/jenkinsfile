@@ -1,9 +1,9 @@
-#!/bin/bash
+!/bin/bash
 
-# if [ ! -s "./ci/pa11y-config.json" ]; then 
-#    echo "The file ./ci/pa11y-config.json either doesn't exist or is empty."
-#    exit 1
-# fi
+if [ ! -s "./ci/pa11y-config.json" ]; then 
+   echo "The file ./ci/pa11y-config.json either doesn't exist or is empty."
+   exit 1
+fi
 
 echo -e "\n Pa11y testing started... \n"
 
