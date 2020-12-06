@@ -11,6 +11,8 @@ EXIT_CODE=0
 
 pa11y-ci --config ./ci/pa11y-config.json --json > pa11y-ci-results.json || EXIT_CODE=$?
 
+echo $EXIT_CODE
+
 set -e
 
 pa11y-ci-reporter-html --source ./pa11y-ci-results.json --destination ./pa11y-ci-results
