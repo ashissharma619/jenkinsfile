@@ -40,12 +40,12 @@ pipeline {
                          sh "./aem-cd/stages/pa11y-tests/common/pa11y-tests.sh"
         //                 execFileIfExists './ci/post-pa11y-tests.sh'
         //             }
-        //             post {
-        //                 always {
-        //                     archiveArtifacts artifacts: 'pa11y-ci-results/**/*'
-        //                     script { env.PALLY_REPORT = "<${env.BUILD_URL}artifact/pa11y-ci-results/index.html|Pally report> | " }
-        //                 }
-        //             }
+                    post {
+                        always {
+                            archiveArtifacts artifacts: 'pa11y-ci-results/**/*'
+                            script { env.PALLY_REPORT = "<${env.BUILD_URL}artifact/pa11y-ci-results/index.html|Pally report> | " }
+                        }
+                    }
                     }
                 }
             }
