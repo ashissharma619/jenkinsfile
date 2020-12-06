@@ -1,0 +1,17 @@
+{
+	"defaults": {
+	  "standard": "WCAG2AA",
+	  "timeout": 30000
+	},
+	"chromeLaunchConfig": {
+	  "args": ["--no-sandbox"],
+	  "executablePath": "/usr/bin/google-chrome-stable",
+	  "ignoreHTTPSErrors": false
+	},
+	"urls": [
+	  {
+		"url": "https://www.ee.co.uk",
+		"screenCapture": "./ee-co-uk.png"
+	  }
+	]
+  }
