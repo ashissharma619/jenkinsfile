@@ -9,9 +9,7 @@ echo -e "\n Pa11y testing started... \n"
 
 EXIT_CODE=0
 
-pa11y-ci --sitemap http://pa11y.org/sitemap.xml || EXIT_CODE=$?
-
-echo $EXIT_CODE
+cat ./ci/pa11y-config.json
 
 pa11y-ci --config ./ci/pa11y-config.json --json > pa11y-ci-results.json || EXIT_CODE=$?
 
