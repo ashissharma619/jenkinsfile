@@ -9,13 +9,12 @@ echo -e "\n Pa11y testing started... \n"
 
 EXIT_CODE=0
 
-cat ./ci/pa11y-config.json
-
 pa11y-ci --config ./ci/pa11y-config.json || EXIT_CODE=$?
 
 echo $EXIT_CODE
 
 echo $WORKSPACE
+touch testing
 
 set -e
 
