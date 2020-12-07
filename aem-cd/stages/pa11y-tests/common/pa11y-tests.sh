@@ -11,7 +11,7 @@ EXIT_CODE=0
 
 cat ./ci/pa11y-config.json
 
-pa11y-ci --config ./ci/pa11y-config.json --json > pa11y-ci-results.json || EXIT_CODE=$?
+pa11y-ci --config ./ci/pa11y-config.json || EXIT_CODE=$?
 
 echo $EXIT_CODE
 
