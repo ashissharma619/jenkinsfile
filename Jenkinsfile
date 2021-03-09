@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        MSYS_NO_PATHCONV=1
+        MSYS_NO_PATHCONV="1"
     }    
     agent { docker { image 'maven:3.3.3' } }
     stages {
