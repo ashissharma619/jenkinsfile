@@ -8,7 +8,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh(script: 'echo "text here" >> ../deleteme.txt')
-                sh "git commit -am "[ci skip] Skip build""
+                sh(script: 'git commit -am "[ci skip] Skip build"')
                 echo 'Building..'
             }
         }
